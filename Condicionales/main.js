@@ -156,14 +156,91 @@ else{
     console.log(`${nombre} esta capacitado para conducir`)
 } */
 
-
 /* Ejercicio 11 */
 
-let edad = prompt(`Ingrese su edad`)
+/* let edad = Number(prompt("Ingrese su edad")); */
 
-let infante = edad <= "12"
-let adolescente = edad >= "13" && edad <= "18"
-let mayorJoven = edad >= "19" && edad <= "45"
-let anciano = edad >= "46" && edad <= "100"
-let superAnciano = edad > "100"
+
+/* if (edad <= 12) {
+  alert(`eres un infante`)
+}
+else if (edad >= 13 && edad <= 18) {
+  alert(`eres un adolescente`)
+}
+else if (edad >= 19 && edad <= 45) {
+  alert(`eres un mayor joven`)
+}
+else if (edad < 100){
+  alert(`eres un anciano`)
+}
+else {
+  alert(`en realidad tiene mas de 100?`)
+} */
+
+/* Ejercicio 12 */
+
+/* let ingresarNumero = Number(prompt(`Ingrese numero del 1 al 3`))
+let numerodeseado = Number(prompt(`ingrese un numero que desee`))
+if (ingresarNumero < 1 || ingresarNumero > 3) {
+  alert(`valor no permitido`)
+} else if (ingresarNumero == 1) {
+  alert(`el numero ingresado es ${ingresarNumero * numerodeseado}`)
+} else if(ingresarNumero == 2){
+  alert(`el doble del numero ingresado es ${ingresarNumero*numerodeseado}`)
+}else if(ingresarNumero == 3){
+  alert(`el doble del numero ingresado es ${ingresarNumero*numerodeseado}`)
+} */
+
+
+/* Ejercicio 13 */
+
+/* let nombreCliente = prompt(`ingrese su nombre`)
+let pase = prompt(`ingrese si su pase es VIP o NORMAL`)
+let entrada = prompt(`Posee entrada SI o NO `)
+
+if (nombreCliente == "Marcelo" || pase == "VIP") {
+  alert(`Bienvenido ${nombreCliente}`)
+} else if (entrada == "SI") 
+{
+  let entradaDos = prompt(`desea utilizar entrada "SI" o "NO"`)
+  if (entradaDos == "SI") {
+    alert(`bienvenido ${nombreCliente}`)
+  } else {
+    alert(`no puede ingresar`)
+  }
+} else {
+  alert(`no puede ingresar`)
+}
+let  comprarEntrada = prompt(`quiere comprar una entrada? "SI" o "NO"`)
+if(comprarEntrada == "SI"){
+ let dinero = prompt (`Cuanto dinero disponible tiene?`)
+ if(dinero>1000){
+  alert(`Buenvenido ${nombreCliente} puede ingresar`)
+ } else {
+  `no se puede realizar la comprar`
+ }
+
+} else{ alert(`No puede ingresar, hasta luego`)} */
+
+/* Ejercicio 14 */
+
+let numeroIngresado = Number(prompt(`Ingrese un numero que desee entre el 1 y el 10`))
+let numeroIncognito = 7
+
+
+if (numeroIngresado > numeroIncognito) {
+  alert(`el numero es mayor, vuelve a intentarlo`)
+  let numeroIngresado = Number(prompt(`Ingrese un numero que desee entre el 1 y el 10`))
+  if (numeroIngresado < numeroIncognito) {
+    alert(`el numero es menor, vuelve a intentarlo`)
+    let numeroIngresado = Number(prompt(`Ingrese un numero que desee entre el 1 y el 10`))
+    if (numeroIncognito === numeroIngresado) {
+      alert(`adivinaste`)
+    } 
+  }else if(numeroIngresado > numeroIncognito || numeroIngresado < numeroIncognito){
+    alert(`no tienes mas intentos`)
+}
+
+}
+
 
