@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class=" flex flex-wrap items-center justify-center mt-10 bg-red-950 gap-10">
+    <div>
+        <div id="contenedor" class="  bg-gray-400 h-[150px] w-[150px] border-[1px] border-black rounded-lg shadow-black shadow-md">
+        </div>
+        <button class="bg-yellow-400 w-[70px] mt-3 rounded-md font-bold shadow-black shadow-md" id="button" >Cambiar</button>
+    </div>
+<div class="flex flex-col text-center items-center">
+    <div id="textContenedor" class="bg-white h-[150px] w-[150px] border-[1px] border-black rounded-lg shadow-black shadow-md mt-5">
+    </div>
+    <input type="text" name="" id="textInput" class="border-[1px] border-black mt-5">
+    <button id="resetBtn" class="bg-yellow-400 w-[70px] mt-3 rounded-md font-bold shadow-black shadow-md">reset</button>
+</div>
+<div>
+  <div class= "flex flex-col bg-white h-[200px] w-[250px] border-[1px] border-black rounded-lg shadow-black shadow-md mt-5 text-center items-center">  
+    <article>
+    <h2>Estatura</h2>
+    <h4 class="text-[8px]">En centimetros</h4>
+    <input class="border-[1px] border-black mt-1" type="number" name="" id="estatura" >
+    </article>
+    
+    <article>
+    <h2>Peso</h2>
+    <h4 class="text-[8px]">En kilogramos</h4>
+    <input class="border-[1px] border-black mt-1" type="number" name="" id="peso" >
+    </article>
+    <button class=" flex bg-yellow-400 w-[70px] mt-6 rounded-md font-bold  shadow-black shadow-md justify-center" id="calcular"> Calcular </button>
+
+  </div> 
+    <article class="bg-white h-[100px] w-[250px] border-[1px] border-black rounded-lg shadow-black shadow-md mt-5 text-center">
+    <h2>Resultado</h2>
+    <h4 class="text-[8px]">Su indice de masa corporal es:</h4>
+    <input class="border-[1px] border-black mt-1" type="text" name="" id="indiceCorporal" >
+    </article>
+</div>
+
+    <script src="tailwind.config.js" ></script>
+    <script src="main.js" ></script>
+</body>
+</html>
